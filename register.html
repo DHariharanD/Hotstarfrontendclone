@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&family=Righteous&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="pagina.css" />
+
+    <title>Form</title>
+  </head>
+  <script src="/script.js"></script>
+  <body>
+    <div class="segundaDiv" id="divRegistro">
+      <h1 class="titlezin" id="mudarTitulo">Register</h1>
+      <div class="quadrado" style="padding-bottom: 4rem;">
+        <input
+          class="input1"
+          placeholder="Enter your access"
+          id="primeiroAcesso"
+        />
+        <br />
+        <input
+          class="input2"
+          placeholder="Confirm your access"
+          id="segundoAcesso"
+        />
+      </div>
+      <h1 class="titlezin">Enter your password</h1>
+      <div class="quadrado">
+        <input
+          class="input1"
+          type="password"
+          placeholder="Enter your password"
+          id="primeiraSenha"
+        />
+        <br />
+        <input
+          class="input2"
+          type="password"
+          placeholder="Confirm your password"
+          id="segundaSenha"
+        />
+      </div>
+
+      <div class="btn">
+        <button class="login" onclick="voltarAba()">Back</button>
+        <button class="registro" onclick="userRegister()">Confirm</button>
+      </div>
+    </div>
+    <style>
+        * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+body {
+  background: url("./assets/bg.png");
+  height: 94vh;
+  width: 99vw;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  flex-direction: column;
+}
+
+.titlezin {
+  font-family: "Righteous";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 8rem;
+  line-height: 9.6rem;
+  margin-bottom: 1rem;
+}
+
+.quadrado {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+
+input {
+  background: transparent;
+  border: none;
+  outline: 0;
+  padding: 1rem 0;
+  border-bottom: 2px solid white;
+  width: 50%;
+  max-width: 50rem;
+  color: white;
+}
+
+input::placeholder {
+  color: gray;
+}
+
+.btn {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 4%;
+  max-width: 50rem;
+}
+
+button {
+  margin-top: 2rem;
+  height: 4rem;
+  width: 96%;
+  border-radius: 0.8rem;
+  border: none;
+  background: #4044ed;
+  color: white;
+}
+
+button:hover {
+  background: #2f31ca;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.segundaDiv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+    </style>
+  </body>
+</html>
