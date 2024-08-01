@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Disney + clone</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  </head>
+  <body>
+    
+    <nav class="navbar">
+      <img src="images/logo.png" class="brand-logo" alt="" />
+      <ul class="nav-links">
+        <li class="nav-items"><a href="tv.html">TV</a></li>
+        <li class="nav-items"><a href="movie.html">MOVIES</a></li>
+        <li class="nav-items"><a href="webseries.html">WEBSERIES</a></li>
+        <li class="nav-items"><a href="kids.html">KIDS</a></li>
+        <li class="nav-items"><a href="sports.html">SPORTS</a></li>
+      </ul>
+      <div class="right-container"></div>
+       <input type="text" class="search-box" placeholder="search" />
+        <button class="sub-btn">subcribe</button>
+        <a href="login.html" class="login-link">Login</a> 
+		<a href="register.html" class="login-link">Register</a>
+		<style>
+			.login-link {
+  margin-right: 10px; /* Adjust the value as needed */
+}
+
+		</style>
+      </div>
+    </nav>
+
+    <div class="carousel-container">
+      <div class="carousel">
+        <!--<div class="slider">
+          <div class="slide-content">
+            <h1 class="movie-title">loki</h1> 
+            <p class="movie-des">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Aspernatur omnis maiores, temporibus dignissimos ipsa ipsam.
+            </p>
+          </div>
+          <img src="images/slider 1.png" alt="" />
+        </div>-->
+      </div>
+    </div>
+    <div class="video-card-container">
+			<div class="video-card">
+				<img src="images/disney.PNG" class="video-card-image" alt="" />
+				<video src="videos/disney.mp4" mute loop class="card-video"></video>
+			</div>
+
+			<div class="video-card">
+				<img src="images/pixar.PNG" class="video-card-image" alt="" />
+				<video src="videos/pixar.mp4" mute loop class="card-video"></video>
+			</div>
+
+			<div class="video-card">
+				<img src="images/geographic.PNG" class="video-card-image" alt="" />
+				<video src="videos/geographic.mp4" mute loop class="card-video"></video>
+			</div>
+
+			<div class="video-card">
+				<img src="images/marvel.PNG" class="video-card-image" alt="" />
+				<video src="videos/marvel.mp4" mute loop class="card-video"></video>
+			</div>
+
+			<div class="video-card">
+				<img src="images/star-wars.PNG" class="video-card-image" alt="" />
+				<video src="videos/star-war.mp4" mute loop class="card-video"></video>
+			</div>
+		</div>
+
+		<h1 class="title">Top Rated Shows</h1>
+
+<div class="movies-list">
+    <button class="pre-btn" title="btn">
+        <img src="images/pre.png" alt="" />
+    </button>
+    <button class="nxt-btn" title="btn">
+        <img src="images/nxt.png" alt="" />
+    </button>
+    <div class="card-container">
+        <div class="card">
+            <img src="https://example.com/images/breaking_bad.jpg" class="card-img" alt="Breaking Bad" />
+            <div class="card-body">
+                <h2 class="name">Breaking Bad</h2>
+                <h6 class="des">Chemistry teacher becomes drug dealer.</h6>
+                <button class="watchlist-btn">add to watchlist</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://example.com/images/game_of_thrones.jpg" class="card-img" alt="Game of Thrones" />
+            <div class="card-body">
+                <h2 class="name">Game of Thrones</h2>
+                <h6 class="des">Noble families vie for power in Westeros.</h6>
+                <button class="watchlist-btn">add to watchlist</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://example.com/images/the_wire.jpg" class="card-img" alt="The Wire" />
+            <div class="card-body">
+                <h2 class="name">The Wire</h2>
+                <h6 class="des">Life in Baltimore's drug scene.</h6>
+                <button class="watchlist-btn">add to watchlist</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://example.com/images/the_sopranos.jpg" class="card-img" alt="The Sopranos" />
+            <div class="card-body">
+                <h2 class="name">The Sopranos</h2>
+                <h6 class="des">Mob boss navigates personal and professional challenges.</h6>
+                <button class="watchlist-btn">add to watchlist</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://example.com/images/mad_men.jpg" class="card-img" alt="Mad Men" />
+            <div class="card-body">
+                <h2 class="name">Mad Men</h2>
+                <h6 class="des">1960s New York ad agency drama.</h6>
+                <button class="watchlist-btn">add to watchlist</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://example.com/images/better_call_saul.jpg" class="card-img" alt="Better Call Saul" />
+            <div class="card-body">
+                <h2 class="name">Better Call Saul</h2>
+                <h6 class="des">Lawyer Jimmy McGill's trials and tribulations.</h6>
+                <button class="watchlist-btn">add to watchlist</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://example.com/images/the_crown.jpg" class="card-img" alt="The Crown" />
+            <div class="card-body">
+                <h2 class="name">The Crown</h2>
+                <h6 class="des">Queen Elizabeth II's reign and events of the 20th century.</h6>
+                <button class="watchlist-btn">add to watchlist</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://example.com/images/friends.jpg" class="card-img" alt="Friends" />
+            <div class="card-body">
+                <h2 class="name">Friends</h2>
+                <h6 class="des">Six friends navigate life in Manhattan.</h6>
+                <button class="watchlist-btn">add to watchlist</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://example.com/images/seinfeld.jpg" class="card-img" alt="Seinfeld" />
+            <div class="card-body">
+                <h2 class="name">Seinfeld</h2>
+                <h6 class="des">Misadventures of comedian Jerry Seinfeld.</h6>
+                <button class="watchlist-btn">add to watchlist</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://example.com/images/stranger_things.jpg" class="card-img" alt="Stranger Things" />
+            <div class="card-body">
+                <h2 class="name">Stranger Things</h2>
+                <h6 class="des">Supernatural forces in a small town.</h6>
+                <button class="watchlist-btn">add to watchlist</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://example.com/images/breaking_bad.jpg" class="card-img" alt="Breaking Bad" />
+            <div class="card-body">
+                <h2 class="name">Peaky Blinders</h2>
+                <h6 class="des">1919 Birmingham gangster family saga.</h6>
+                <button class="watchlist-btn">add to watchlist</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://example.com/images/the_office.jpg" class="card-img" alt="The Office" />
+            <div class="card-body">
+                <h2 class="name">The Office</h2>
+                <h6 class="des">Mockumentary on office life.</h6>
+                <button class="watchlist-btn">add to watchlist</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<h1 class="title">Binge-Worthy Series</h1>
+
+<div class="series-list">
+    <button class="pre-btn" title="btn">
+        <img src="images/pre.png" alt="" />
+    </button>
+    <button class="nxt-btn" title="btn">
+        <img src="images/nxt.png" alt="" />
+    </button>
+    <div class="card-container">
+        <div class="card">
+            <img src="https://example.com/images/the_expanse.jpg" class="card-img" alt="The Expanse" />
+            <div class="card-body">
+                <h2 class="name">The Expanse</h2>
+                <h6 class="des">Space opera series set in a colonized solar system.</h6>
+                <button class="watchlist-btn">add to watchlist</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://example.com/images/westworld.jpg" class="card-img" alt="Westworld" />
+            <div class="card-body">
+                <h2 class="name">Westworld</h2>
+                <h6 class="des">Sci-fi series about a futuristic theme park populated by artificial beings.</h6>
+                <button class="watchlist-btn">add to watchlist</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://example.com/images/black_mirror.jpg" class="card-img" alt="Black Mirror" />
+            <div class="card-body">
+                <h2 class="name">Black Mirror</h2>
+                <h6 class="des">Anthology series exploring themes of techno-paranoia.</h6>
+                <button class="watchlist-btn">add to watchlist</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://example.com/images/the_handmaids_tale.jpg" class="card-img" alt="The Handmaid's Tale" />
+            <div class="card-body">
+                <h2 class="name">The Handmaid's Tale</h2>
+                <h6 class="des">Dystopian series based on Margaret Atwood's novel.</h6>
+                <button class="watchlist-btn">add to watchlist</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://example.com/images/mindhunter.jpg" class="card-img" alt="Mindhunter" />
+            <div class="card-body">
+                <h2 class="name">Mindhunter</h2>
+                <h6 class="des">Crime drama based on the early days of criminal psychology and criminal profiling at the FBI.</h6>
+                <button class="watchlist-btn">add to watchlist</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://example.com/images/dark.jpg" class="card-img" alt="Dark" />
+            <div class="card-body">
+                <h2 class="name">Dark</h2>
+                <h6 class="des">German science fiction thriller series centered around time travel.</h6>
+                <button class="watchlist-btn">add to watchlist</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://example.com/images/broadchurch.jpg" class="card-img" alt="Broadchurch" />
+            <div class="card-body">
+                <h2 class="name">Broadchurch</h2>
+                <h6 class="des">British crime drama series focusing on the impact and aftermath of a tragic death in a small coastal town.</h6>
+                <button class="watchlist-btn">add to watchlist</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://example.com/images/line_of_duty.jpg" class="card-img" alt="Line of Duty" />
+            <div class="card-body">
+                <h2 class="name">Line of Duty</h2>
+                <h6 class="des">Series following the investigations of AC-12, a controversial police anti-corruption unit.</h6>
+                <button class="watchlist-btn">add to watchlist</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://example.com/images/the_walking_dead.jpg" class="card-img" alt="The Walking Dead" />
+            <div class="card-body">
+                <h2 class="name">The Walking Dead</h2>
+                <h6 class="des">Post-apocalyptic horror television series based on the comic book series of the same name.</h6>
+                <button class="watchlist-btn">add to watchlist</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://example.com/images/better_call_saul.jpg" class="card-img" alt="Better Call Saul" />
+            <div class="card-body">
+                <h2 class="name">Fargo</h2>
+                <h6 class="des">Anthology black comedy–crime drama television series.</h6>
+                <button class="watchlist-btn">add to watchlist</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://example.com/images/the_office.jpg" class="card-img" alt="The Office" />
+            <div class="card-body">
+                <h2 class="name">Parks and Recreation</h2>
+                <h6 class="des">Political satire mockumentary sitcom.</h6>
+                <button class="watchlist-btn">add to watchlist</button>
+            </div>
+        </div>
+    </div>
+</div>
+<h1 class="title">Documentaries</h1>
+
+<div class="documentaries-list">
+    <button class="pre-btn" title="btn">
+        <img src="images/pre.png" alt="" />
+    </button>
+    <button class="nxt-btn" title="btn">
+        <img src="images/nxt.png" alt="" />
+    </button>
+    <div class="card-container">
+        <div class="card">
+            <img src="https://example.com/images/blue_planet_ii.jpg" class="card-img" alt="Blue Planet II" />
+            <div class="card-body">
+                <h2 class="name">Blue Planet II</h2>
+                <h6 class="des">Exploration of marine habitats around the globe.</h6>
+                <button class="watchlist-btn">add to watchlist</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://example.com/images/planet_earth_ii.jpg" class="card-img" alt="Planet Earth II" />
+            <div class="card-body">
+                <h2 class="name">Planet Earth II</h2>
+                <h6 class="des">Journey through Earth's most extreme habitats.</h6>
+                <button class="watchlist-btn">add to watchlist</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://example.com/images/making_a_murderer.jpg" class="card-img" alt="Making a Murderer" />
+            <div class="card-body">
+                <h2 class="name">Making a Murderer</h2>
+                <h6 class="des">Investigation into Steven Avery's case.</h6>
+                <button class="watchlist-btn">add to watchlist</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://example.com/images/the_jinx.jpg" class="card-img" alt="The Jinx" />
+            <div class="card-body">
+                <h2 class="name">The Jinx</h2>
+                <h6 class="des">True crime series about Robert Durst.</h6>
+                <button class="watchlist-btn">add to watchlist</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://example.com/images/cosmos.jpg" class="card-img" alt="Cosmos: A Spacetime Odyssey" />
+            <div class="card-body">
+                <h2 class="name">Cosmos: A Spacetime Odyssey</h2>
+                <h6 class="des">Exploration of our universe and beyond.</h6>
+                <button class="watchlist-btn">add to watchlist</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://example.com/images/13th.jpg" class="card-img" alt="13th" />
+            <div class="card-body">
+                <h2 class="name">13th</h2>
+                <h6 class="des">Examination of racial inequality in the United States criminal justice system.</h6>
+                <button class="watchlist-btn">add to watchlist</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://example.com/images/the_social_dilemma.jpg" class="card-img" alt="The Social Dilemma" />
+            <div class="card-body">
+                <h2 class="name">The Social Dilemma</h2>
+                <h6 class="des">Investigation into the dangerous human impact of social networking.</h6>
+                <button class="watchlist-btn">add to watchlist</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://example.com/images/blackfish.jpg" class="card-img" alt="Blackfish" />
+            <div class="card-body">
+                <h2 class="name">Blackfish</h2>
+                <h6 class="des">Exposé on SeaWorld's treatment of killer whales.</h6>
+                <button class="watchlist-btn">add to watchlist</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://example.com/images/inside_bill_gates_mind.jpg" class="card-img" alt="Inside Bill's Brain: Decoding Bill Gates" />
+            <div class="card-body">
+                <h2 class="name">Inside Bill's Brain: Decoding Bill Gates</h2>
+                <h6 class="des">Exploration of Bill Gates' mind and motivations.</h6>
+                <button class="watchlist-btn">add to watchlist</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://example.com/images/when_we_left_earth.jpg" class="card-img" alt="When We Left Earth: The NASA Missions" />
+            <div class="card-body">
+                <h2 class="name">When We Left Earth: The NASA Missions</h2>
+                <h6 class="des">Chronicles the history of NASA missions.</h6>
+                <button class="watchlist-btn">add to watchlist</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://example.com/images/the_last_dance.jpg" class="card-img" alt="The Last Dance" />
+            <div class="card-body">
+                <h2 class="name">The Last Dance</h2>
+                <h6 class="des">Chronicles the rise of the 1990s Chicago Bulls.</h6>
+                <button class="watchlist-btn">add to watchlist</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+		<script src="index.js" async></script>
+  </body>
+</html>
+
